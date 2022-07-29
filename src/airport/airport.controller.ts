@@ -5,7 +5,7 @@ import { AirportService } from './airport.service';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 
 @Controller('airports')
-@UseGuards(JwtAuthGuard)
+//@UseGuards(JwtAuthGuard)
 @UseInterceptors(BusinessErrorsInterceptor)
 export class AirportController {
     constructor(
