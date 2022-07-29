@@ -1,5 +1,5 @@
 export enum SeatType {
-    WINDOW,
-    MIDDLE, 
-    AISLE
+    WINDOW = 'WINDOW',
+    MIDDLE = 'MIDDLE', 
+    AISLE = 'AISLE'
 }
