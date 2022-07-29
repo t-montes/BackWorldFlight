@@ -8,6 +8,7 @@ import { AirportModule } from './airport/airport.module';
 import { Airport } from './airport/airport.entity';
 import { AppController } from './app.controller';
 import { AirlineModule } from './airline/airline.module';
+import { TicketModule } from './ticket/ticket.module';
 
 @Module({
   imports: [
@@ -32,6 +33,7 @@ import { AirlineModule } from './airline/airline.module';
     SeatTypeModule,
     AirportModule,
     AirlineModule,
+    TicketModule,
   ],
   controllers: [AppController],
 })
