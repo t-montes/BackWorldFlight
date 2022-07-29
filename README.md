@@ -1,4 +1,4 @@
-<a href="https://heroku.com/deploy?template=https://github.com/MISW-4104-Web/BackMuseums" target='_blank'>
+<a href="https://heroku.com/deploy?template=https://github.com/t-montes/BackWorldFlight" target='_blank'>
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 
