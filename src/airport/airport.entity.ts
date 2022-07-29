@@ -37,5 +37,5 @@ export class Airport {
 
     @OneToMany(() => Ticket, ticket => ticket.destination)
     ticketsArrived: Ticket[];
-*/
+*/ 
 }

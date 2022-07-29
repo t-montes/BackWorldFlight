@@ -1,11 +1,11 @@
-import { Controller, Get, Param, useInterceptors } from '@nestjs/common';
+import { Controller, Get, Param, UseInterceptors } from '@nestjs/common';
 import { BusinessErrorsInterceptor } from '../interceptors/interceptor';
 import { TicketDto } from './ticket.dto';
 import { TicketService } from './ticket.service';
 
-@Controller('ticket')
+@Controller('tickets')
 
-@useInterceptors(BusinessErrorsInterceptor)
+@UseInterceptors(BusinessErrorsInterceptor)
 export class TicketController {
     constructor(
         private readonly ticketService: TicketService,

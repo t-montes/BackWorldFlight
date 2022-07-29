@@ -6,6 +6,8 @@ import { AuthModule } from './auth/auth.module';
 import { UserModule } from './user/user.module';
 import { AirportModule } from './airport/airport.module';
 import { Airport } from './airport/airport.entity';
+import { Airline } from './airline/airline.entity';
+import { Ticket } from './ticket/ticket.entity';
 import { AppController } from './app.controller';
 import { AirlineModule } from './airline/airline.module';
 import { TicketModule } from './ticket/ticket.module';
@@ -21,7 +23,7 @@ import { TicketModule } from './ticket/ticket.module';
       username: 'postgres',
       password: 'postgres',
       database: 'world-flight',
-      entities: [Airport,],
+      entities: [Airport,Airline,Ticket],
       dropSchema: true,
       synchronize: true,
       keepConnectionAlive: true,

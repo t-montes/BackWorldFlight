@@ -39,16 +39,16 @@ INSERT INTO public.airport
 -- Inserting Tickets
 INSERT INTO public.ticket
 	(
-		id,
-		departure_date,
-		arrival_date,
+		code,
+		"departureDate",
+		"arrivalDate",
 		seat,
 		price,
-		seatType
+		"seatType"
 	)
 	VALUES
 	(
-		"df0f6de4-0f66-11ed-861d-0242ac120002",
+		'df0f6de4-0f66-11ed-861d-0242ac120002',
 		'2018-01-01',
 		'2018-01-05',
 		'A1',
@@ -56,6 +56,7 @@ INSERT INTO public.ticket
 		'MIDDLE'
 	);
 
+/*
 -- Inserting Passengers
 INSERT INTO public.passenger
 	(
@@ -73,3 +74,4 @@ INSERT INTO public.passenger
 		'+79998887766',
 		20
 	);
+*/

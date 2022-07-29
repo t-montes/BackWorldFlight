@@ -3,11 +3,11 @@ import { Column, Entity, PrimaryColumn } from "typeorm";
 
 @Entity()
 export class Ticket {
-    @PrimaryColumn('UUID')
+    @PrimaryColumn('uuid')
     code: string;
 
     @Column()
-    deperaturDate: Date;
+    departureDate: Date;
     
     @Column()
     arrivalDate: Date;

@@ -22,6 +22,8 @@ export class AirportService {
     }
 
     async create(airport: Airport): Promise<Airport> {
+        const foundAirport:Airport = await this.airportRepository.findOne(airport.code);
+        if (foundAirport) throw new BusinessLogicException('Airport already exists', BusinessError.BAD_REQUEST);        
         this.verifyAirport(airport);
         return this.airportRepository.save(airport);
     }
